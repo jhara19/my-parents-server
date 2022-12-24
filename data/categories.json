@@ -1,0 +1,43 @@
+[
+    {
+      "index": "1",
+      "category_name": "Cardio Exercise",
+      "img": "https://i.ibb.co/WF120w2/cardio1.webp",
+      "categoryList": ["Treadmills", "Recline Bikes", "Cross Trainers"]
+    },
+    {
+      "index": "2",
+      "category_name": "Chest and Arms",
+      "img": "https://i.ibb.co/ftGr3TN/chest1.webp",
+      "categoryList": ["Bench Machine", "Chest Press"]
+    },
+    {
+      "index": "3",
+      "category_name": "Free Weights",
+      "img": "https://i.ibb.co/7G6nRcW/free-weight1.jpg",
+      "categoryList": ["Dumbbells", "Fixed Barbells", "Plate Weights"]
+    },
+    {
+      "index": "4",
+      "category_name": "Leg Exercise",
+      "img": "https://i.ibb.co/7t4ShkN/Leg1.webp",
+      "categoryList": ["Leg Curl", "Calf Press"]
+    },
+    {
+      "index": "5",
+      "category_name": "Shoulder Training",
+      "img": "https://i.ibb.co/hyNkd6t/Shoulder.webp",
+      "categoryList": ["Overhead Press", "Kettlebells"]
+    },
+    {
+      "index": "6",
+      "category_name": "Back Training",
+      "img": "https://i.ibb.co/n3PSRJJ/Back1.webp",
+      "categoryList": [
+        "Assisted Pull-Up",
+        "Low Seated Row",
+        "T-Bar Row"
+      ]
+    }
+  ]
+  
