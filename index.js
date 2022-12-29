@@ -30,6 +30,7 @@ try{
 
   const categoriesCollection = client.db('safa-collection').collection('categories');
   const productsCollections = client.db('safa-collection').collection('products');
+  const bookingsCollections = client.db('safa-collection').collection('bookings')
 
   app.get('/categories', async (req, res) => {
       const query = {};
@@ -43,7 +44,35 @@ try{
     const query = {category_id: id};
     const result = await productsCollections.find(query).toArray();
     res.send(result);
-  })
+  });
+
+   //products get with id
+   app.get('/products/:id', async (req, res) => {
+    const id = req.params.id;
+    const query = {category_id: id};
+    const result = await productsCollections.find(query).toArray();
+    res.send(result);
+  });
+
+app.get('/bookings', async (req, res) => {
+  const email = req.query.email;
+  const query = {
+    email: email
+  };
+  const bookings = await bookingsCollections.find(query).toArray();
+  res.send(bookings);
+
+})
+
+
+
+  //POST BOOKINGS
+  app.post('/bookings', async (req, res) => {
+     const booking = req.body;
+     console.log(booking);
+     const result = await bookingsCollections.insertOne(booking);
+     res.send(result);
+  }) 
 }
   finally{
 
